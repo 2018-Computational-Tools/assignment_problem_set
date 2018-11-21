@@ -1,5 +1,5 @@
 # Regular packages
-install.packages("rmarkdown")
+install.packages(c("rmarkdown", "caTools", "bitops")) # for knitting
 install.packages("dplyr")
 install.packages("ggplot2")
 
