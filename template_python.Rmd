@@ -14,6 +14,14 @@ editor_options:
   chunk_output_type: inline
 ---
 
+> WARNING: this is not yet supported because the RStudio version required for interactive use of python in RMarkdown is not the version installed by binder.
+
+```{r, include=FALSE}
+# required behind the scenes
+library(reticulate)
+```
+
+
 ```{python}
 # setup
 import pandas as pd

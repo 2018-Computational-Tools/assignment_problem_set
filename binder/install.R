@@ -1,6 +1,10 @@
 # Regular packages
-# install.packages("dplyr")
-# install.packages("ggplot2")
+install.packages("rmarkdown")
+install.packages("dplyr")
+install.packages("ggplot2")
+
+# python from RMarkdown (not fully supported yet on binder)
+# install.packages("reticulate")
 
 # Bioconductor packages
 # install.packages("BiocManager")
