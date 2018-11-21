@@ -4,20 +4,18 @@ This repo contains problem set templates for R and python and the [binder](https
 
 ## Cleanup
 
-Generally, it is good to clean up the repo once ready for student usage by deleting unused files in the main and subdirectories. This also prevents your binder environment from installing more than is necessary. Key files to **keep** for R/python, respectively (keep both if you want to run both):
+Generally, it is good to clean up the repo once ready for student usage by deleting unused files in the main and subdirectories. This also prevents your binder environment from installing more than is necessary. Key files to **keep** for R/python, respectively (keep both if you want to run both) in addition to your problem set notebook files:
 
 ### R
  - `binder/runtime.txt`
  - `binder/install.R`
  - `scripts/functions.R` (if any functions)
- - relevant `.Rmd` files
 
 ## Python
  - `binder/requirements.yml`
  - `binder/postBuild`
  - `scripts/functions.py` (if any functions)
  - `scripts/__init__.py` (if any functions)
- - relevant `.ipynb` files
 
 ## Binder Setup
 
