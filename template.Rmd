@@ -16,17 +16,9 @@ editor_options:
 ---
 
 ```{r setup, include = FALSE}
-# load libraries
-library(tidyverse) 
-library(latex2exp)
-library(reticulate)
-# load python
-use_condaenv("class", conda = "auto", required = TRUE)
-# set global options for figure output
-knitr::opts_chunk$set(
-  dev = c("png", "pdf"), 
-  dev.args = list(pdf = list(encoding = "WinAnsi", useDingbats = FALSE)),
-  fig.keep = "all", fig.path = file.path("fig_output", "fig_prefix_"))
+library(dplyr)
+library(ggplot2)
+source(file.path("scripts", "functions.R"))
 ```
 
 # $\LaTeX$ Math
@@ -41,27 +33,7 @@ $$
 \end{align}
 $$
 
-# Python
-
-```{python}
-# python version
-import sys
-print(sys.version)
-```
-
-```{python}
-# working directory
-import os
-print(os.getcwd())
-```
-
-```{python}
-# script files
-exec(open(os.path.join("scripts", "functions.py")).read())
-print(test_add(2, 5))
-```
-
-# R
+# System Info
 
 ```{r}
 # R version
@@ -74,8 +46,39 @@ getwd()
 ```
 
 ```{r}
-# script files
-source(file.path("scripts", "functions.R"))
+# session info
+sessionInfo()
+```
+
+
+# Custom Function
+
+```{r}
+# custom function from scripts/functions.R loaded in setup
 print(test_add(2,5))
+```
+
+# Data
+
+```{r}
+# data
+parabola <- 
+  data_frame(
+    x = -50:50,
+    err = rnorm(n = length(x), sd = 5),
+    y = (x + err)^2
+  ) 
+parabola
+```
+
+# Plot
+
+```{r}
+parabola %>% 
+  ggplot() + 
+  aes(x, y) +
+  geom_smooth(method = "loess", formula = "y ~ x^2") + 
+  geom_point() + 
+  theme_bw()
 ```
 
