@@ -36,16 +36,6 @@ $$
 # System Info
 
 ```{r}
-# R version
-R.version.string
-```
-
-```{r}
-# working directory
-getwd()
-```
-
-```{r}
 # session info
 sessionInfo()
 ```
@@ -55,7 +45,7 @@ sessionInfo()
 
 ```{r}
 # custom function from scripts/functions.R loaded in setup
-print(test_add(2,5))
+test_add(2,5)
 ```
 
 # Data
