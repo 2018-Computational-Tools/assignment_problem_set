@@ -1,6 +1,6 @@
 # Regular packages
-install.packages("dplyr")
-install.packages("ggplot2")
+# install.packages("dplyr")
+# install.packages("ggplot2")
 
 # Bioconductor packages
 # install.packages("BiocManager")
