@@ -21,6 +21,8 @@ Generally, it is good to clean up the repo once ready for student usage by delet
 
 Once ready for student use, make sure to modify the files in the `binder` sub-directory depending on which language the students should use for this problem set (`R` or `Python` or both). Binder will dockerize your repository the first time it is run with a new configuration but will re-use the docker image on subsequent launches. This means that the first time you launch binder for the latest version of your repo, it may take some time to launch but will be fast for everyone else aftewards. This means that you should always test-run your repository on binder before giving out the link to students. Switching between `RStudio` vs. `Jupyter Lab` as the IDE is done easily by changing the binder link as described below.
 
+**Important**: binder will *only* work for public repositories. If your repository is private, you will have to make it public in the repository settings before you can launch it in binder. If you need to, you can turn a repository public just before students use it (leave enough time to start the binder environment for the first time), and then private again after use. 
+
 ## R
  - modify the `binder/runtime.txt` file to specify which R date snapshot should be used (the [MRAN](https://mran.microsoft.com/documents/rro/reproducibility) network keeps a daily snapshot)
  - modify the `binder/install.R` file to make sure all dependencies are specified. Dependencies can be from CRAN, bioconductor or GitHub. Since GitHub hosted libraries are not part of the MRAN snapshot, it is best to specify a commit or release tag to ensure that a compatible version of the package is installed in the binder.
