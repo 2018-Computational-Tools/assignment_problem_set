@@ -1,5 +1,6 @@
 dependencies:
-  - matplotlib
-  - numpy
-  - pandas
-  - jupyterlab_launcher
+- jupyterlab=0.34.0
+- matplotlib=2.1
+- numpy=1.15.0
+- pandas=0.20
+- python=3.6
