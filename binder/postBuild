@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Install python dependencies
-# pip install jupyter jupyterlab notebook numpy matplotlib pandas
-
-# Install a JupyterLab extension
+# Install JupyterLab extension
 jupyter labextension install @jupyterlab/toc
+
+# Install python dependencies
+pip install numpy matplotlib pandas
