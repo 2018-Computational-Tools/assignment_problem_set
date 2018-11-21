@@ -6,7 +6,7 @@ date: "`r format(Sys.Date(), '%d %b %Y')`"
 output:
   html_document: 
     df_print: paged
-    number_sections: no
+    number_sections: yes
     toc: yes
     toc_float: true
     toc_depth: 3
@@ -15,7 +15,8 @@ editor_options:
   chunk_output_type: inline
 ---
 
-```{r setup, include = FALSE}
+```{r setup, include = TRUE, message=FALSE}
+# setup
 library(dplyr)
 library(ggplot2)
 source(file.path("scripts", "functions.R"))
@@ -54,7 +55,7 @@ test_add(2,5)
 # data
 parabola <- 
   data_frame(
-    x = -50:50,
+    x = -20:20,
     err = rnorm(n = length(x), sd = 5),
     y = (x + err)^2
   ) 
@@ -63,11 +64,11 @@ parabola
 
 # Plot
 
-```{r}
+```{r, fig.width=6, fig.height=4}
 parabola %>% 
   ggplot() + 
   aes(x, y) +
-  geom_smooth(method = "loess", formula = "y ~ x^2") + 
+  geom_smooth(method = "lm", formula = y ~ I(x^2)) + 
   geom_point() + 
   theme_bw()
 ```

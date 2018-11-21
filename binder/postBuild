@@ -3,5 +3,6 @@
 # Install JupyterLab extension
 jupyter labextension install @jupyterlab/toc
 
-# Install python dependencies
+# Install other python dependencies
+# Note: this is only necessary if also installing R because requirements.yml is ignored in that casea
 pip install numpy matplotlib pandas
