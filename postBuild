@@ -3,11 +3,11 @@
 # Install JupyterLab extension
 jupyter labextension install @jupyterlab/toc
 
-# Download repository of interest
+# Remove all setup files
+rm -rf ./*
 
+# Clone content branch
+git clone --single-branch --branch content https://github.com/CUB-Computational-Tools/assignment_problem_set.git .
 
-# Remove output from Jupyter notebooks if there are any
-ipynbs=(`find ./ -maxdepth 1 -name "*.ipynb"`)
-if [ ${#ipynbs[@]} -gt 0 ]; then
-    jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace $ipynbs
-fi
+# Safely remove output from all Jupyter notebooks
+find . -type f -name "*.ipynb" -exec jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace {} \+
