@@ -3,5 +3,11 @@
 # Install JupyterLab extension
 jupyter labextension install @jupyterlab/toc
 
-# Remove output from Jupyter notebooks
-jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace *.ipynb
+# Download repository of interest
+
+
+# Remove output from Jupyter notebooks if there are any
+ipynbs=(`find ./ -maxdepth 1 -name "*.ipynb"`)
+if [ ${#ipynbs[@]} -gt 0 ]; then
+    jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace $ipynbs
+fi
