@@ -3,11 +3,17 @@
 # Install JupyterLab extension
 jupyter labextension install @jupyterlab/toc
 
-# Remove all setup files
+# Enable nbgitpuller to pull in content
+jupyter serverextension enable --py nbgitpuller --sys-prefix
+
+# Cleanup setup files
 rm -rf ./*
 
-# Clone content branch
-git clone --single-branch --branch content https://github.com/CUB-Computational-Tools/assignment_problem_set.git .
+# # Clone content branch
+# ORG=CUB-Computational-Tools
+# REPO=assignment_problem_set
+# BRANCH=content
+# git clone --single-branch --branch ${BRANCH} https://github.com/${ORG}/${REPO}.git .
 
 # Safely remove output from all Jupyter notebooks
-find . -type f -name "*.ipynb" -exec jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace {} \+
+# find . -type f -name "*.ipynb" -exec jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace {} \+
