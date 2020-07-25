@@ -1,10 +1,8 @@
 # Regular packages
 install.packages(c("rmarkdown", "caTools", "bitops")) # for knitting
-install.packages("dplyr")
-install.packages("ggplot2")
-
-# python from RMarkdown (not fully supported yet on binder)
-# install.packages("reticulate")
+install.packages("dplyr") # for data wrangling
+install.packages("ggplot2") # for plotting
+install.packages("reticulate") # for python to work in RMarkdown
 
 # Bioconductor packages
 # install.packages("BiocManager")
