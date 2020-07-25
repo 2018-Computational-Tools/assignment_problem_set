@@ -26,3 +26,6 @@ packrat/src/
 
 # exclude authentication tokens
 .httr-oauth
+
+# exclude output files
+*.html
