@@ -1,8 +1,8 @@
 # Welcome
 
-This is the binder configuration for dual use of R and python in the same project. If you are launching this in RStudio, please navigate manually to the project directory and click on the `project.Rproj` file to launch the project. In Jupyter this happens automatically. 
+This is the binder configuration for this problem set. If you are launching this problem set in RStudio, please navigate manually to the project directory in the `Files` navigation window on the right and click on the `project.Rproj` file to launch the problem set.
 
-Everything hereafter is only relevant if you are the person designing this project.
+Everything hereafter is only relevant if you are the person maintaining this problem set.
 
 # Setup
 
