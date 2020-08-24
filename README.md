@@ -2,11 +2,11 @@
 
 ## Jupyter
 
-If you are launching this problem set in Jupyter, please navigate to the project directory in the file navigation window on the left.
+If you are launching this problem set in Jupyter, please navigate to the project directory in the file navigation window on the left and double-click on the `.ipynb` file for this problem set.
 
 ## RStudio
 
-If you are launching this problem set in RStudio, please navigate to the project directory in the file navigation window on the right and click on the `project.Rproj` file to launch the problem set.
+If you are launching this problem set in RStudio, please navigate to the project directory in the file navigation window on the right and click on the `project.Rproj` file to launch the problem set. Confirm the prompt and double-click on the `.Rmd` file for this problem set once the file navigation window reloads.
 
 # Setup
 
