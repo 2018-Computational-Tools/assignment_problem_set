@@ -2,9 +2,9 @@
 
 This is the binder configuration for this problem set. 
 
-If you are launching this problem set in Jupyter, please navigate to the project directory in the file navigation window on the left.
+> If you are launching this problem set in Jupyter, please navigate to the project directory in the file navigation window on the left.
 
-If you are launching this problem set in RStudio, please navigate to the project directory in the file navigation window on the right and click on the `project.Rproj` file to launch the problem set.
+> If you are launching this problem set in RStudio, please navigate to the project directory in the file navigation window on the right and click on the `project.Rproj` file to launch the problem set.
 
 Everything hereafter is only relevant if you are the person maintaining this problem set.
 
