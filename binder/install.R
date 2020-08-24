@@ -1,7 +1,5 @@
 # Regular packages
 install.packages(c("rmarkdown", "caTools", "bitops")) # for knitting
-install.packages("dplyr") # for data wrangling
-install.packages("ggplot2") # for plotting
 install.packages("reticulate") # for python to work in RMarkdown
 
 # Bioconductor packages
