@@ -1,7 +1,6 @@
 # Regular packages
 install.packages(c("rmarkdown", "caTools", "bitops")) # for knitting
-install.packages("dplyr") # for data wrangling
-install.packages("ggplot2") # for  plotting
+install.packages("tidyverse") # for all tidyverse functionality
 
 # Bioconductor packages
 # install.packages("BiocManager")
