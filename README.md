@@ -23,7 +23,7 @@ Before you start designing your problem set for any given week, please complete 
 
 ## Draft the problem set
 
-1. Design your problem set draft by editing the problem set file (`weekX.Rmd` or `weekX.ipynb`). If you are working in Jupyter, make sure to always run the code block in the `cleanup.ipynb` notebook **before** committing changes to git (alternatively, you can do this in your notebook by selecting Cell => All Output => Clear).
+1. Design your problem set draft by editing the problem set file (`weekX.Rmd` or `weekX.ipynb`). If you are working in Jupyter, make sure to always clear the output in the notebook **before** committing changes to git. There are two ways to do this: you can run the code block in the `cleanup.ipynb` notebook, or you can do this in your problem-set notebook by selecting Cell => All Output => Clear.
 1. Make sure the binder link for peer reviewers below works for interacting with your draft problem set. Note that if you are using functionality from non-standard libraries other than `numpy`, `matplotlib`, and `pandas` in python or the [`tidyverse`](https://www.tidyverse.org/) packages in R, you may have to modify the binder configuration in the relevant `binder-` branch for your problem set to work on binder. If this is case, take a look at the [`BINDER.md`](BINDER.md) file and ask an instructor for help if you get stuck.
 1. During next class, your peer reviewers will use the binder link below to interact with your draft problem set and will use the pull request to provide feedback.
 
