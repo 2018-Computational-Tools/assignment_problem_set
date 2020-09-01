@@ -2,7 +2,7 @@
 
 This is the repository for designing your weekly problem sets. Clone it to your desktop and keep it synchronized with GitHub for peer feedback and submissions.
 
-## Before you Start
+## IMPORTANT: Before you Start
 
 Before you start using this repository, please edit the README.md file of your repository in the text editor of your choice and replace all instances of the word `assignment_problem_set` (the name of the template repo) with the name of your own repository.
 
