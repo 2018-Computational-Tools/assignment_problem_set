@@ -15,11 +15,11 @@ To design a new problem set, follow the instructions below:
 Before you start designing your problem set for any given week, please complete the following steps. Make sure to do this every week with the appropriate branch name for the week (`week1`, `week2`, etc.):
 
 1. Create a new branch called `weekX` (X=1,2,3,..., e.g. `week1`).
-1. Create a new pull request from `weekX` back to the `master` branch. This is the pull request for peer feedback and it will stay open until you finalize your work, only merge once you are certain you want to submit your final version for grading.
 1. Synchronize the repository with your desktop and make sure to switch to the new `weekX` branch for the new problem set (NOT `master` or a previous week's branch).
 1. Copy one of the `blank_` template files to create a new notebook for this week's problem set (name it `weekX.Rmd` or `weekX.ipynb`).
 1. Remove all but one of the links from the `Binder link for peer reviewers` and `Binder link for final version` sections for the relevant week [below](#week-1) (i.e. decide whether you want to work in R or python and whether to work in RStudio or Jupyter this week).
 1. Test-launch your binder for peer reviewers by clicking on the remaining binder link for this section (leave the tab open in the background, this may take quite a while because your binder server is built from scratch the first time - note: you can reload the page after ~1 hour if it's stuck).
+1. Create a new pull request on GitHub from `weekX` back to the `master` branch. This is the pull request for peer feedback and it will stay open until you finalize your work, only merge once you are certain you want to submit your final version for grading.
 
 ## Draft the problem set
 
